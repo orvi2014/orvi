@@ -1,0 +1,96 @@
+<!Doctype Html>
+<Html>
+	<head>
+	<Title>Robat Das Orvi</Title>
+	<meta name="author" content="Robat Das Orvi">
+	 <meta http-equiv="refresh" content="185">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Sarpanch:400,600' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/input.css" />
+
+	</head>
+	<body>
+<audio src="orvi.mp3" autoplay>
+
+<embed src="orvi.mp3" width="180" height="90" hidden="true" />
+</audio>
+	  
+<div class="terminal">
+  <div class="header">
+    <h1>CONSOLE//</h1>
+  </div>
+  <div id="wrap">
+  <span terminal=1 class="terminal-line">
+    Hello stranger.
+  <br /><br />
+    Welcome to my site.
+  <br /><br /><br />
+    starting...
+    <br /><br />
+    I am Orvi. From Brac University. An open source enthunist and a fun loving boy.
+    <br/><br />
+    I Love music and book very much. 
+    <br/><br />
+    "Yes, there are two paths you can go by, but in the long run
+     <br/><br />
+    There's still time to change the road you're on
+     <br/><br />
+    And it makes me wonder." 
+     <br/><br />
+     Do you love my site? Please Stay Tune.
+      <br/><br />
+      I will be back soon.......
+      <br/><br />
+      If you want to contact with me type "cd facebook" in the terminal.
+      <br/><br>
+      Want to see my project?
+      <br/><br>
+      type "cd github" in the terminal.
+      <br/><br>
+     orvi@xyz:~$
+     <form name="login" class="input input--haruki">
+<input type="text" name="userid" onkeypress="return searchKeyPress(event);" class="input__field input__field--haruki" value="Facebook/Github" /> 
+
+<input type="button" onclick="check(this.form)" value="Login" id="btnSearch" style="display:none" />
+</form>
+  </span>
+  <div>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+function searchKeyPress(e)
+{
+  
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('btnSearch').click();
+        return false;
+    }
+    return true;
+}
+</script>
+<script>
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ var facebook=form.userid.value.toLowerCase();
+ if( facebook == "cd facebook")
+  {
+    window.open('https://www.facebook.com/dipodijontu')/*opens the target page while Id & password matches*/
+  }
+ else if(facebook=="cd github")
+ 
+ 	{
+    window.open('https://www.github.com/orvi2014')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Wrong Command.")/*displays error message*/
+  }
+}
+</script>
+</body>
+
+</Html>

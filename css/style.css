@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+.header {
+  margin-left: 15px;
+  padding-bottom: 25px;
+  font-size: 50px;
+  font-family: 'Sarpanch', sans-serif;
+}
+
+.terminal {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  font-family: 'Share Tech', sans-serif;
+  color: #00FF00;
+}
+
+.terminal-line {
+  display: block;
+  margin-left: 20px;
+  margin-top: 4px;
+  letter-spacing: 2.5px;
+  font-size: 16px;
+}
+
+@import "compass/css3";
+
+span {
+	font-family: monospace;
+	font-size: 2em;
+}
+span:after {
+	opacity: 0;
+	animation: cursor 1s infinite;
+}
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+/* styling */
+ 
+#wrap {
+	box-sizing: border-box;
+	display: table-cell;
+	vertical-align: middle;
+}
